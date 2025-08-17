@@ -224,7 +224,7 @@ def show_displacement(elements, coordinates, u_h):
         ax.plot_trisurf(verts[:, 0], verts[:, 1], z_values, vmin=vmin, vmax=vmax, cmap='viridis', edgecolor='k', linewidth=0.2)
     ax.set_title('Displacement u_h')
     ax.view_init(30, -120)
-    plt.show()
+    plt.savefig('displacment.png')
 
 def flux_eb_eval(coordinate, element, noedges, nodes2edge, edge2element, p_sol):
     """Computes the flux vector p_h inside each element from the solution vector. [cite: 1402]"""
